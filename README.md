@@ -26,18 +26,18 @@ The purpose of this project was to identify emergent phenomenon from data contai
     * os
 
 ## Project Description
-(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
 * Data sets:
     * Kaggle
         * Olympic Medal Data - csv
         * World Marathon Majors - csv
+     * World Bank
+        * GDP Data - csv
     * CIA World Book - JSON dump
     * World Weather Online - API call
 
-The project started by exploring 100 years of Olympic marathon medal data and noticed the sudden rise and pronounced success of two African nations, Ethiopia and Kenya. Journalists and acedemics had looked into this however there was little to no data involved in there analysis. Consistent in the hyposthesis found in these sources were interests in the influence of demographics and benefit of climate and geography in training. 
+The project started by exploring 100 years of Olympic marathon medal data in which the sudden rise and pronounced success of two African nations, Ethiopia and Kenya, was of interest. Many secondary sources were encountered where journalists and acedemics had looked into this. However, there was little to no data involved in their analysis. Consistent in the hyposthesis found in these sources were interests in the influence of demographics and benefit of climate and geography in training. 
 
-Initially there were challenges in cleaning the Olympic data, isolating the Marathon results, merging this with the data from the World Marathon Majors and standardizing labels and metrics involved. In order to collect the pertinent demographic data of each of the countries explored a JSON dump from the CIA World Book was sourced. In order to collect climate data an API call was utlized to gather 5 years of weather data for cities that held either major races or the olympics. The weather data for the African countries was approximated by refrencing their respective capital cities.
-
+Initially there were challenges in cleaning the Olympic data, isolating the Marathon results, merging this with the data from the World Marathon Majors and standardizing labels and metrics. In order to collect the pertinent demographic data for each of the countries a JSON dump from the CIA World Book was sourced. In order to collect climate data an API call was utlized to gather 5 years of weather data for cities that held either major races or the olympics. The weather data for the African countries was approximated by refrencing their respective capital cities.
 
 ## Needs of this project
 
@@ -46,39 +46,68 @@ Initially there were challenges in cleaning the Olympic data, isolating the Mara
 - data visualization
 - writeup/reporting
 
-
 ## Getting Started
 
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
+1. Clone this repo: https://github.com/dorisep/Marathon_Analysis_Project.git 
 
-    *If using offline data mention that and how they may obtain the data from the froup)*
-    
+    (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
+
+2. Raw Data is being kept [here](https://github.com/dorisep/Marathon_Analysis_Project/tree/master/Data) within this repo.
+
+* offline data for Jonathan_Project01.ipynb
+    *[athlete_events.csv](https://www.kaggle.com/itsfarhan/athletes-events-datasets) 
+    *[Female_Elite_Berlin.csv](https://www.kaggle.com/gjbroughton/world-marathon-majors#Female_Elite_Berlin.csv)
+    *[Female_Elite_Boston.csv](https://www.kaggle.com/gjbroughton/world-marathon-majors#Female_Elite_Boston.csv)
+    *[Female_Elite_Chicago.csv](https://www.kaggle.com/gjbroughton/world-marathon-majors#Female_Elite_Chicago.csv)
+    *[Female_Elite_London.csv](https://www.kaggle.com/gjbroughton/world-marathon-majors#Female_Elite_London.csv)
+    *[Female_Elite_New_York.csv](https://www.kaggle.com/gjbroughton/world-marathon-majors#Female_Elite_New_York.csv)
+    *[Female_Elite_Tokyo.csv](https://www.kaggle.com/gjbroughton/world-marathon-majors#Female_Elite_Tokyo.csv)
+    *[Male_Elite_Berlin.csv](https://www.kaggle.com/gjbroughton/world-marathon-majors#Male_Elite_Berlin.csv)
+    *[Male_Elite_Boston.csv](https://www.kaggle.com/gjbroughton/world-marathon-majors#Male_Elite_Boston.csv)
+    *[Male_Elite_Chicago.csv](https://www.kaggle.com/gjbroughton/world-marathon-majors#Male_Elite_Chicago.csv)
+    *[Male_Elite_London.csv](https://www.kaggle.com/itsfarhan/athletes-events-datasets)
+    *[Male_Elite_New_York.csv](https://www.kaggle.com/gjbroughton/world-marathon-majors#Male_Elite_London.csv)
+    *[Male_Elite_Tokyo.csv](https://www.kaggle.com/gjbroughton/world-marathon-majors#Male_Elite_Tokyo.csv)
+
+* offline data for project1_GDPVsMedals.ipynb
+    *[athlete_events.csv](https://www.kaggle.com/itsfarhan/athletes-events-datasets)
+    *[API_NY.GDP.MKTP.CD_DS2_en_csv_v2_103640.csv](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)
+
+* offline data for GroupProject.ipynb
+    * uses major_marathon_men.csv and major_marathon_women.csv from Jonathan_Project01.ipynb
+    * uses gdp_data from project1_GDPVsMedals.ipynb
+
 3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
-
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages) create another "setup.md" file and link to it here*  
-
-5. Follow setup [instructions](Link to file)
 
 ## Featured Notebooks/Analysis/Deliverables
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
-* [Blog Post](link)
+* [Notebooks](https://github.com/dorisep/Marathon_Analysis_Project/tree/master/Jupyter%20Notebooks)
+* [Data Visualizations](https://github.com/dorisep/Marathon_Analysis_Project/tree/master/Data%20Visualizations)
+* [Written Analysis](https://github.com/dorisep/Marathon_Analysis_Project/blob/master/Summary:Presnetation/PyKnot%20-%20Going%20the%20Distance_%20Summary%20(1).pdf)
+* [Presentation](https://github.com/dorisep/Marathon_Analysis_Project/blob/master/Summary:Presnetation/Case%20study.pdf)
 
 
-## Contributing DSWG Members
+## Contributing Members
 
-**Team Leads (Contacts) : [Full Name](https://github.com/[github handle])(@slackHandle)**
+Adam Blinn|[github](https://github.com/adamtb71)|[LinkedIn](https://www.linkedin.com/in/blinn/)|
 
-#### Other Members:
+* project1_GDPVsMedals.ipynb
+* Written Analysis
+* Presentation
 
-|Name     |  Slack Handle   | 
-|---------|-----------------|
-|[Full Name](https://github.com/[github handle])| @johnDoe        |
-|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
+Jonathan Smith|[github](https://github.com/JonathanAric)|[LinkedIn](https://www.linkedin.com/in/jonathan-smith-ba10875b/)|
 
-## Contact
-* If you haven't joined the SF Brigade Slack, [you can do that here](http://c4sf.me/slack).  
-* Our slack channel is `#datasci-projectname`
-* Feel free to contact team leads with any questions or if you are interested in contributing!
+* Jonathan_Project01.ipynb
+* Written Analysis
+
+Taiwo Onitiri|[github](https://github.com/tonitiri)|[LinkedIn](https://www.linkedin.com/in/taiwo-onitiri-05479437/)|
+
+* GroupProject.ipynb
+* Written Analysis
+
+Edward Doris|[github](https://github.com/dorisep)|[LinkedIn](https://www.linkedin.com/in/eddoris/)|
+
+* CIA_WFB_Json.ipynb
+* Historical_majors_weather.ipynb
+* Written analysis/final edit
+* Presentation
+
